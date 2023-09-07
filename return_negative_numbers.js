@@ -19,8 +19,9 @@ function makeNegative(num) {
 
 console.log(makeNegative(42));
 
-//                          condition ? expressionIfTrue : expressionIfFalse
-const makeNegative1 = num => (num < 0 ? num : num * -1);
+//Arrow Function with Ternary Statement 
+const makeNegative1 = num => (num < 0) ? num : num * -1;
+//                           condition ? expressionIfTrue : expressionIfFalse
 
 console.log(makeNegative1(-42));
 
@@ -32,6 +33,7 @@ console.log(makeNegative1(-42));
 
 */
 
+//Alternative solution 
 const makeNegative2 = n => -Math.abs(n);
 
 console.log(makeNegative2(5)); // makes negative
